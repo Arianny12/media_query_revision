@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Butcherman&family=Creepster&family=Merriweather:wght@700&family=Metal+Mania&family=Oswald:wght@400;600&display=swap');
+
+/*font-family: 'Butcherman', cursive;
+font-family: 'Creepster', cursive;
+font-family: 'Metal Mania', cursive;
+*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Oswald', sans-serif;
+  /*background-image: url(background.webp);*/
+  font-weight: bold;
+  padding: 0;
+  object-fit: contain;
+  margin: 0;
+}
+
+.mainContainer {
+  background-color: #E66C2C;
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+}
+
+.title {
+  display: flex;
+  height: 450px;
+  font-family: 'Butcherman', cursive;
+  background-image: url(title_background.jpeg);
+  background-size: cover;
+  background-position: center center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 32px;
+  font-weight: bolder;
+}
+
+.menu {
+  display: flex;
+  object-fit: contain;
+  align-items: center;
+  font-size: 25px;
+  justify-content: space-around;
+  background-color: #7349AC;
+  font-family: 'Metal Mania', cursive;
+}
+
+.main_checkout {
+  background-color: #7349AC;
+  font-size: 25px;
+  color: white;
+  padding: 10px;
+  font-family: 'Creepster', cursive;
+  position: fixed;
+  right: 25px;
+  top: 25px;
+}
+
+.checkout {
+  background-color: #7349AC;
+  font-size: 25px;
+  color: white;
+  padding: 10px;
+  font-family: 'Creepster', cursive;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+h2 {
+  text-align: center;
+}
+
+.discount {
+  display: flex;
+  font-family: 'Metal Mania', cursive;
+  align-items: center;
+  /*position: fixed; */
+  background-size: cover;
+  background-position: center center;
+  justify-content: center;
+  color: black;
+  background-color:#E66C2C;
+
+}
+
+.discountHome {
+  display: flex;
+  font-family: 'Metal Mania', cursive;
+  align-items: center;
+  /*position: fixed; */
+  background-size: cover;
+  background-position: center center;
+  justify-content: center;
+  color: white;
+}
+
+.menu a:hover, .main_checkout:hover, .checkout:hover {
+  background-color: orange;
+  color: black;
+  text-decoration: none;
+}
+
+/* how do i make it hover only over the text and not the images */
+.image {
+  object-fit: contain;
+  object-position: center center;
+  width: 250px;
+  height: 250px;
+  /* margin-right: 20px; */
+}
+
+.clothingCollection img {
+  object-fit: contain;
+}
+
+.meme_pics {
+  flex: 1;
+  text-align: center;
+  /* this didn't work --
+  object-fit: cover;
+  object-position: center, center; */
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.clothingCollection {
+  max-width: 860px;
+  align-self: center;
+}
+
+.description {
+  font-size: 20px;
+}
+
+.item_name{
+  font-size:25px;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Merriweather', serif;
+}
+
+.items{
+  text-align: center;
+}
+
+.soldOut{
+  filter: grayscale(1.0);
+}
+
+.soldOut + p::after {
+  display: block;
+  content: "Sold Out";
+  color: purple;
+}
+
+
+ .checkout_page{
+   background-color:#E66C2C;
+   padding-left: 15px;
+   padding-right:15px;
+
+  }
+
+.deadpool_image{
+  width: 100%;
+  height: 100%;
+  padding-left: 40px;
+}
+
+/* code from online source -----
+https://www.w3schools.com/howto/howto_css_checkout_form.asp */
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+  }
+
+  .col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+  }
+
+  .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+  }
+
+  .col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+  }
+
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+
+  .container {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+  }
+
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+
+  }
+
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+
+  .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 2px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .btn:hover {
+    background-color: #057be3;
+  }
+
+  span.price {
+    float: right;
+    color: grey;
+  }
+  /* i added this */
+  .product{
+    color:black
+  }  
+
+  @media only screen and (max-width: 1000px) {
+    .mainContainer {
+      background-color: #E66C2C;
+    }
+
+  .content {
+    margin-right:100px;
+    margin-left: 100px;
+    gap: 200px;
+  }
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+
+}
